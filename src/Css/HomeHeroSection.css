@@ -1,0 +1,142 @@
+
+.HomeHeroSection{
+    background-image: 
+        linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0),       
+            rgba(157, 59, 198, 0.6)   
+        ), 
+        url("../assets/images/hero.png");
+    height: 80vh;
+    width:100%;
+    background-position: 90% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.HomeHeroSectionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0px 80px;
+    width: 50%;
+}
+.HomeHeroSectionLabel{
+    color: black;
+}
+.HomeHeroSectionLabel h4{
+    margin-bottom: 12px;
+    line-height: 46px;
+}
+.HomeHeroSectionLabel h4 span{
+    font-weight: 700;
+    color:var(--purple) ;
+    font-size: 60px;
+}
+.HomeHeroSectionLabel p{
+    font-size: 18px;
+}
+.HomeHeroSectionBtn{
+    padding: 8px 64px;
+    border-radius: 8px;
+    background-color: var(--purple);
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    margin-top: 12px;
+}
+.HomeHeroSectionBtn:hover{
+    background-color: transparent;
+    border:1px solid var(--purple);
+    color:black;
+}
+
+
+/* Responsive-home-hero-section  */
+
+@media(max-width:1200px){
+    .HomeHeroSectionLabel h4 span{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:992px){
+    .HomeHeroSection{
+        height: 50vh;
+    }
+    .HomeHeroSectionContainer{
+        width: 70%;
+    }
+}
+ 
+@media(max-width:768px){   
+
+.HomeHeroSection{
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+.HomeHeroSectionContainer{
+    width: 100%;
+}
+.HomeHeroSectionLabel h4{
+    margin-bottom: 12px;
+    line-height: 34px;
+    font-size: 20px;
+}
+.HomeHeroSectionLabel h4 span{
+    font-weight: 700;
+    color:var(--purple) ;
+    font-size: 30px;
+}
+.HomeHeroSectionLabel p{
+    font-size: 16px;
+}
+.HomeHeroSectionLabel p{
+    display: none;
+}
+
+}
+
+@media(max-width:500px){
+    
+.HomeHeroSection{
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+.HomeHeroSectionContainer{
+    width: 70%;
+    padding: 0px 20px;
+
+}
+.HomeHeroSectionLabel h4{
+    margin-bottom: 4px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.HomeHeroSectionLabel h4 span{
+    font-weight: 700;
+    font-size: 20px;
+}
+.HomeHeroSectionLabel p{
+    font-size: 16px;
+    display: none;
+}
+.HomeHeroSectionBtn{
+    padding: 8px 30px;
+    border-radius: 8px;
+    background-color: var(--purple);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    margin-top: 0px;
+}
+}

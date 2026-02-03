@@ -1,0 +1,126 @@
+
+.ServicesCardsSection{
+    margin: 80px;
+}
+.ServicesCardsSection h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: var(--purple);
+}
+.ServicesCardscontainer{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 50px 0px;
+    flex-wrap: wrap;
+}
+.cardContent{   
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.ServicesCardscontainer .card{
+    border: none;
+    padding: 20px;
+    margin: 20px 20px;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    flex: 1 1 300px;
+
+}
+.card1Icon, .card2Icon, .card3Icon{
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    color:var(--purple);
+}
+.card .Thirdicon{
+    font-size: 80px;
+    color:var(--purple);
+}
+.card .heading{
+    margin-top: 30px;
+}
+.card .heading h3{
+    font-weight: 600;
+}
+.card p{
+    text-align: center;
+    margin-top: 12px;
+}
+.card1btn,.card2btn,.card3btn{
+    margin-top: auto;
+    padding-top: 8px;
+}
+.card button{
+    background-color: var(--purple);
+    color:white;
+    padding: 8px 16px;
+    border:none;
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+}
+.card button:hover{
+    background-color: var(--bgColor);
+    color:black;
+    border:1px solid var(--purple);
+}
+
+
+/* Responsive-services-cards  */
+
+@media(max-width:1100px){
+    .card .heading h3{
+        font-size: 22px;
+    }   
+}
+
+@media(max-width:840px){
+    .ServicesCardscontainer .card{
+        max-width: 100%;
+    }   
+}
+@media(max-width:630px){ 
+    .ServicesCardsSection h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 35px;
+        text-transform: uppercase;
+        color: var(--purple);
+    }   
+}
+@media(max-width:500px){
+    .ServicesCardsSection{
+        margin: 80px 30px;
+    }
+    .ServicesCardscontainer .card{
+        max-width: 100%;
+    }   
+    .card .heading h3{
+        font-size: 20px;
+    }
+    .card i{
+        font-size: 30px;
+        color:var(--purple);
+    }
+    .card .Thirdicon{
+        font-size: 30px;
+        color:var(--purple);
+    }
+    .card p{
+        margin-top: 4px;
+        font-size: 14px;
+    }
+    .card button{
+        padding: 8px 8px;
+    }   
+}
