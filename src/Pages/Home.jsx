@@ -1,5 +1,7 @@
+import AboutUsSection from "../Components/About-Us-Section";
 import HomeHeroSection from "../Components/Home-HeroSection";
 import ServicesCard from "../Components/ServicesCards";
+import Testimonial from "../Components/Testimonial-section";
 
 function Home(){
 
@@ -7,6 +9,8 @@ function Home(){
         <>
             <HomeHeroSection />
             <ServicesCard/>
+            <AboutUsSection/>
+            <Testimonial/>
         </>
     )
 

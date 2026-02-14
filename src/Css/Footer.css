@@ -1,0 +1,38 @@
+
+.FooterSection{
+    /* position: relative; */
+    /* bottom: 0; */
+    width: 100%;
+    background-color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* margin-top: 100px; */
+    color: white;
+}
+.footer-container{
+    padding: 20px 50px;
+}
+.footer-container p{
+    margin: 0;
+    text-align: center;
+}
+.footer-container p span{
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration:underline;
+}
+
+/* Footer-responsive  */
+
+@media(max-width:430px){
+
+    .footer-container p{
+        font-size: 14px;
+    }
+    .footer-container p span{
+        font-size: 16px;
+    }   
+
+}

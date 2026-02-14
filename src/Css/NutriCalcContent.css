@@ -1,0 +1,278 @@
+
+.NutriCalc-contentSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px;
+    border: 1px solid ;
+}
+.NutriCalc-ContentContainer{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.2);
+    margin:50px;
+    width: 40%;
+    border-radius: 16px;
+}
+.NutriCalcFormContent-1,
+.NutriCalcFormContent-2,
+.NutriCalcFormContent-3{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 50px;
+    /* border: 1px solid yellow; */
+    display: none;
+}
+.NutriCalcFormContent-1{
+    display: none;
+}
+.NutriCalcMainHeadings{
+    margin: 30px 0px 10px 0px;    
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.5vw;
+    color: var(--purple);
+}
+.NutriCalcpara{
+    text-align: center;
+    font-size: 1.2vw;
+}
+.NutriCalcFormContent-1 input{
+    padding-left: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: var(--bgColor);
+    /* width: 100%; */
+}
+.name, .age{
+    width: 100%;
+    height:40px;
+} 
+.NutriCalcGend{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:8px;
+}
+.NutriCalcGend input{
+    margin: 0;
+}
+
+/* Next&BackBtn  */
+.NextBackBtn{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 30px 50px;
+    gap:10px;
+}
+.NextBackBtn input{
+    width: 150px;
+    height: 40px;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all ease ease-in-out 0.3s;
+}
+.NextBackBtn input:hover{
+    background-color: var(--bgColor);
+    color:var(--purple);
+    font-weight: 600;
+    border: 1px solid var(--purple);
+}
+
+
+/* content1-Responsive  */
+
+@media(max-width:992px){
+
+    .NutriCalcMainHeadings{
+        font-size: 3vw;
+    }
+
+}
+@media(max-width:768px){
+
+    .NutriCalcMainHeadings{
+        font-size: 4vw;
+    }
+    .NutriCalc-ContentContainer{
+        width: 80%;
+        border-radius: 16px;
+    }
+    .NutriCalcpara{
+        font-size: 2.2vw;
+    }
+
+}
+@media(max-width:450px){
+
+    .NutriCalcMainHeadings{
+        font-size: 6vw;
+    }
+    .NutriCalc-ContentContainer{
+        width: 80%;
+        border-radius: 16px;
+    }
+    .NutriCalcpara{
+        font-size: 2.9vw;
+    }
+
+}
+
+
+
+
+/* Content-2  */
+
+.NutriCalcFormContent-2{
+    display: none;
+}
+.NutriCalcFormContent-2 label{
+    margin-bottom: 8px;
+}
+.option2LableHeightLabel{
+    margin-top: 30px;
+}
+.NutriCalcHeightBox{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* margin-top: 30px; */
+}
+.height-ftInput{
+    position: relative;
+    width: 100%;
+}
+.height-ftInput input{
+    width: 100%;
+    padding-left: 8px;
+    height: 40px;
+    border: 1px solid grey;
+}
+.height-ftInput span{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    padding:0 8px;
+    color: grey;
+}
+.height-InInput{
+    position: relative;
+    width: 100%;
+}
+.height-InInput Input{
+    width: 100%;
+    padding-left: 8px;
+    height: 40px;
+    border: 1px solid grey;
+}
+.height-InInput span{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    padding:0 8px;
+    color: grey;
+}
+.NutriCalcWeightBox{
+    margin-top: 30px;
+    /* width: 100%; */
+}
+.weightinputforkg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+.weightinputforkg input{
+    width: 100%;
+    padding-left: 8px;
+    height: 40px;
+    border: 1px solid grey;
+}
+.weightinputforkg span{
+    position: absolute;
+    top: 39px;
+    right: 8px;
+    color: grey;
+}
+
+/* content2-Responsive  */
+
+@media(max-width:500px){
+
+    .option2LableHeightLabel{
+        font-size: 11px;
+    }   
+    .weightLabel{
+        font-size: 11px;
+    }
+    
+    .weightinputforkg span{
+        top: 30px;
+    }
+
+
+}
+
+/* Content3  */
+
+.NutriCalcFormContent-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+.activity-select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+.NutriCalcActivityBox label{
+    margin-bottom: 8px;
+}
+.NutriCalcGoalBox label{
+    margin-bottom: 8px;
+}
+.goal-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+.goal-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 120px;
+    flex: 1 1 calc(50% - 10px);
+}
+.goal-card input[type="radio"] {
+    display: none; 
+}
+.goal-card label {
+    cursor: pointer;
+    display: block;
+    font-weight: 500;
+}
+.goal-card:has(input:checked) {
+    border-color: #9d3bc6;
+    background-color: rgba(157, 59, 198, 0.1);
+    color: #9d3bc6;
+}
+.activeStep{
+    display: flex !important;
+}

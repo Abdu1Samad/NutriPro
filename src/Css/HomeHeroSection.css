@@ -1,5 +1,6 @@
 
 .HomeHeroSection{
+    position: relative;
     background-image: 
         linear-gradient(
             to bottom, 
@@ -20,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     padding: 0px 80px;
     width: 50%;
 }
